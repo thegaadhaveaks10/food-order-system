@@ -1,0 +1,5 @@
+<div class="search-box-container">
+    <input #searchBox class="search-input" type="text" placeholder="Search Food" 
+    (keyup.enter)="search(searchBox.value)" [value]="searchTerm">
+    <button class="btn-style" (click)="search(searchBox.value)">Search</button>
+</div>
